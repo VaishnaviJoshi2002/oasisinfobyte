@@ -1,0 +1,286 @@
+*{
+    margin:0;
+    padding:0;
+    
+}
+:root{
+    --navbar-height:59px;
+}
+html{
+    scroll-behavior: smooth;
+}
+#navbar{
+    display:flex;
+    align-items:center;
+    background-color: rgb(252, 251, 253);
+    top:0px;
+    position:sticky;  
+    font-weight: bold;
+   
+}
+#logo{
+    margin: 20px 30px;
+    height: 30px;
+    padding: 2px auto;
+    font-style: italic;
+    font-variant:inherit;
+    font-size:1.5rem center;
+    color:black;
+}
+#logo h2{
+    font-size: 1.9rem;
+}
+
+#navbar ul{
+    display:flex;   
+}
+#navbar::before{
+    content:"";
+    background-color:  solid black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index:-1;
+    opacity: 0.50;   
+}
+#navbar ul li{
+    font-style: italic;
+    font-variant:inherit;
+    color: solid black;
+    font-size:1.7rem;
+    list-style:none;    
+}
+#navbar ul li a{
+   color:black;
+    display: block;
+    padding: 8px 50px;
+    border-radius: 40px;
+    text-decoration: solid;
+    list-style: center;  
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color:darkgoldenrod;   
+}
+.container{
+    display:flex;
+}
+.infocontainer{
+  display:flex;
+  justify-content:space-around;
+}
+.divInfo{
+    display:flex;
+   flex-direction: column;
+    justify-content: center;
+    font-size: 40px;
+    font-style:italic;
+    font-weight: bold;
+}
+.hello{
+    font-size: 50px;
+}
+.name{
+    font-size:50px ;   
+}
+.about{
+    font-size: 40px;   
+}
+
+.buttons button{
+    padding:9px 14px;
+    border-radius: 15px;
+    color:white;
+    background-color: rgb(131, 131, 242);
+    font-weight: bold;
+    font-size: 15px;
+    margin: 0 3px;
+    cursor: pointer;
+}
+.buttons button:hover{
+    background-color: white;
+    color:rgb(113, 113, 255)
+}
+.divpic img{
+    height:600px;
+}
+.data-container{
+    width:100%;
+
+}
+.aboutme{
+    font-size: 2.0rem;
+   border-radius: 15px;   
+}
+.section{
+    padding:100px 0;
+}
+.about .about-content .left img{
+    height:500px;
+    width:500px;
+    object-fit: cover;
+    border-radius: 10px;
+    border:3px solid black;
+}
+.about .about-content{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-between;
+}
+.about .about-content .left{
+    width:45%;
+
+}
+.about .about-content .right{
+    width:55%;
+    font-size: 2.0rem;
+    font-style: italic;
+
+}
+.divpic1  img{
+    float:left;
+    margin-right: 10px;
+    height:500px;
+    border: 3px solid black;
+   border-radius: 10px;
+   padding:20px 30px;
+
+}
+.text{
+    font-size: 2.7rem;
+    color: rgb(8, 8, 8);
+    font-weight: bold;
+    font-style: italic;
+}
+#skills{
+    text-align: center;
+    padding: 40px,30px;
+    font-weight: bold;
+    font-style: italic;
+  justify-content: center;
+}
+#h2{
+    font-size: 50px;
+    padding:30px 30px;
+    margin:30px 20px;
+}
+#h3{
+    font-size: 40px;
+    padding:2px;
+    margin:20px;
+    color: rgb(101, 101, 226);
+}
+.Skill{
+    width: 300%;
+    max-width: 600px;
+    padding: 30px 20px;
+    display: grid;   
+}
+.skill-name{
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(19, 19, 20);
+    text-transform: uppercase;
+    margin:20px 0;
+}
+.skill-bar{
+    height:14px;
+    background: #5d5b5b;
+    border-radius: 3px;
+}
+.skill-per{
+    height:14px;
+    background: #fd7260;
+    border-radius: 3px;
+    position: relative;   
+}
+.skill-per::before{
+    content: attr(per);
+    position: absolute;
+    padding:6px 8px;
+    background: white;
+    border-radius: 4px;
+    font-size:15px;
+    top:-35px;
+    right:0;
+    transform: translateX(50%);
+}
+.contact{
+    text-align: center;
+    justify-content: center;
+}
+#hi2{
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+#abouts{
+  font-size: 50px;
+  font-style: italic;
+  text-align: center;
+  font-weight: bold;
+  padding: 20px 10px;
+  margin:40px;
+}
+*{
+    box-sizing:border-box;
+}
+.center{
+    text-align: center;
+}
+#contact{
+    position: relative;
+}
+
+#contact-box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width:100%;
+    height:100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('bg1.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: top center;
+
+}
+#contact-box input,
+#contact-box textarea{
+    width:100%;
+    padding:0.5rem;
+    border-radius: 9px;
+    font-size: 1.2rem;
+}
+#contact-box form{
+    width:40%;
+}
+#contact-box label{
+    font-size: 1.7rem;
+    font-style: italic;
+    font-weight: bold;
+}
+footer{
+    background: black;
+    color: white;
+    padding:9px 20px;
+}
+.secondary{
+    text-align: center;
+    font-size: 3.8rem;
+    padding:60px;  
+    font-style: italic; 
+    margin:2px;
+}
+.btn{
+    text-align: center;
+}
+
+
